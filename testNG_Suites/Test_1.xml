@@ -1,0 +1,17 @@
+<suite name="Test_1">
+    <!--<parameter name="account" value="Cel: Wakacje"/>-->
+    <!--<parameter name="receiver" value=" Operator sieci komórkowej"/>-->
+    <!--<parameter name="amount" value="100"/>-->
+    <!--<parameter name="title" value="przykładowy przelew"/>-->
+    <test name="Wykonaj edycje">
+        <classes>
+            <class name="pl.b2b.eurobank.pages.loginPage.TestLoginPage"/>
+            <class name="pl.b2b.eurobank.pages.homePage.TestHomePage">
+                <methods>
+                    <include name="klknijOszczednosci"/>
+                </methods>
+            </class>
+            <!--<class name="pl.b2b.eurobank.pages.paymentPage.TestRecipient"/>-->
+        </classes>
+    </test>
+</suite>
